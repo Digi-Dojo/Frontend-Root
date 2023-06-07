@@ -18,7 +18,7 @@
   -->
 
   <route default>
-    <!-- <div class="container mt-5 def-height-place">
+    <div class="container mt-5 def-height-place">
       <div class="row h-10 pr-5">
         <div class="col-3 pt-2 pl-4">
           <h1 class="h2">Place Name</h1>
@@ -33,12 +33,14 @@
       <div class="row h-90">
         <div class="row col-2 w-100">
           <div class="col-12 h-40 w-100 blue"></div>
-          <div class="col-12 h-20 w-100"> -->
-            <application name="@startup-digi-dojo-lab/places-list"></application>
+          <div class="col-12 h-20 w-100">
             <application name="@startup-digi-dojo-lab/note-creator"></application>
-            <application name="@startup-digi-dojo-lab/place-creator"></application>
-          <!-- </div>
-          <div class="col-12 h-40 w-100 blue"></div>
+            <!-- <application name="@startup-digi-dojo-lab/places-list"></application>
+            <application name="@startup-digi-dojo-lab/place-creator"></application> -->
+          </div>
+          <div class="col-12 h-40 w-100" style="overflow-y: scroll">
+            <application name="@startup-digi-dojo-lab/notes-in-place-list"></application>
+          </div>
         </div>
         <div class="col-8 w-100">
           <iframe
@@ -56,7 +58,7 @@
           <div class="col-12 h-70 w-100 red"></div>
         </div>
       </div>
-    </div> -->
+    </div>
   </route>
 
   <!-- <main>
