@@ -8,3 +8,4 @@ LICENSE
 dist
 coverage
 pnpm-lock.yaml
+webpack.config.js
