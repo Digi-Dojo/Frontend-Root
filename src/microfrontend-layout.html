@@ -1,23 +1,20 @@
 <single-spa-router>
-  <!--
 
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
 
-  -->
 
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
+  <route path="/">
+    <application name="@startup-digi-dojo-lab/create-startup"></application>
+    <application name="@startup-digi-dojo-lab/change-password"></application>
+    <application name="@startup-digi-dojo-lab/list-users-from-startup"></application>
+    <application name="@startup-digi-dojo-lab/login"></application>
+    <application name="@startup-digi-dojo-lab/logout"></application>
+    <application name="@startup-digi-dojo-lab/register-user"></application>
+    <application name="@startup-digi-dojo-lab/add-team-member"></application>
+    <application name="@startup-digi-dojo-lab/user"></application>
   </route>
 
-  -->
 
-  <route default>
+  <route path="/personal">
     <div class="container mt-5 def-height-place">
       <div class="row h-10 pr-5">
         <div class="col-3 pt-2 pl-4">
