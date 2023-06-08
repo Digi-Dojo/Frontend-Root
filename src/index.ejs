@@ -17,6 +17,7 @@
     This CSP allows any SSL-enabled host and for arbitrary eval(), but you should limit these directives further to increase your app's security.
     Learn more about CSP policies at https://content-security-policy.com/#directive
   -->
+
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
   <meta name="importmap-type" content="systemjs-importmap" />
   <!-- If you wish to turn off import-map-overrides for specific environments (prod), uncomment the line below -->
@@ -55,7 +56,7 @@
         "@startup-digi-dojo-lab/root-config": "//localhost:9000/startup-digi-dojo-lab-root-config.js",
 
         "@startup-digi-dojo-lab/add-team-member": "//localhost:8080/startup-digi-dojo-lab-add-team-member.js",
-        "@startup-digi-dojo-lab/change-password": "//localhost:8080/startup-digi-dojo-lab-change-password.js",
+        "@startup-digi-dojo-lab/change-password": "//localhost:8081/startup-digi-dojo-lab-change-password.js",
         "@startup-digi-dojo-lab/create-startup": "//localhost:8080/startup-digi-dojo-lab-create-startup.js",
         "@startup-digi-dojo-lab/list-users-from-startup": "//localhost:8080/startup-digi-dojo-lab-list-users-from-startup.js",
         "@startup-digi-dojo-lab/login": "//localhost:8080/startup-digi-dojo-lab-login.js",
@@ -86,7 +87,6 @@
           "react": "https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js",
           "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js",
           "@mui/material": "https://unpkg.com/@mui/material@latest/umd/material-ui.development.js",
-
 
           "@startup-digi-dojo-lab/root-config": "https://startup-digi-dojo-lab-pr-3.onrender.com/startup-digi-dojo-lab-root-config.js",
 
