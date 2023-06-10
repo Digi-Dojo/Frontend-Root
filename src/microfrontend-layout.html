@@ -6,16 +6,20 @@
 
   -->
 
-  <!-- Example layouts you might find helpful:
-
   <nav>
-    <application name="@org/navbar"></application>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Company Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Place Name</a>
+          <a class="nav-item nav-link" href="#">Personal Desk</a>
+        </div>
+      </div>
+    </div>
   </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
 
   <route default>
     <div class="container mt-5 def-height-place">
@@ -34,12 +38,10 @@
         <div class="row col-2 w-100">
           <div class="col-12 h-40 w-100 blue"></div>
           <div class="col-12 h-20 w-100">
-            <application name="@startup-digi-dojo-lab/note-creator"></application>
-            <!-- <application name="@startup-digi-dojo-lab/places-list"></application>
-            <application name="@startup-digi-dojo-lab/place-creator"></application> -->
+            <!-- <application name="@startup-digi-dojo-lab/note-creator"></application> -->
           </div>
           <div class="col-12 h-40 w-100" style="overflow-y: scroll">
-            <application name="@startup-digi-dojo-lab/notes-in-place-list"></application>
+            <!-- <application name="@startup-digi-dojo-lab/notes-in-place-list"></application> -->
           </div>
         </div>
         <div class="col-8 w-100">
@@ -54,36 +56,14 @@
           </iframe>
         </div>
         <div class="row col-2 w-100">
-          <div class="col-12 h-30 w-100 blue"></div>
-          <div class="col-12 h-70 w-100 red"></div>
+          <div class="col-12 h-30 w-150" style="overflow-y: scroll">
+            <application name="@startup-digi-dojo-lab/task-create-form"></application>
+          </div>
+          <div class="col-12 h-30 w-150" style="overflow-y: scroll">
+            <application name="@startup-digi-dojo-lab/task-list"></application>
+          </div>
         </div>
       </div>
     </div>
   </route>
-
-  <!-- <main>
-    <route default>
-      <application name="@startup-digi-dojo-lab/add-team-member"></application>
-      <application name="@startup-digi-dojo-lab/change-password"></application>
-      <application name="@startup-digi-dojo-lab/create-startup"></application>
-      <application name="@startup-digi-dojo-lab/list-users-from-startup"></application>
-      <application name="@startup-digi-dojo-lab/login"></application>
-      <application name="@startup-digi-dojo-lab/logout"></application>
-      <application name="@startup-digi-dojo-lab/register-user"></application>
-      <application name="@startup-digi-dojo-lab/user"></application>
-
-      <application name="@startup-digi-dojo-lab/calendar-event-form" route="/calendar-event-form"></application>
-      <application name="@startup-digi-dojo-lab/calendar-event-list" route="/calendar-event-list"></application>
-      <application name="@startup-digi-dojo-lab/calendar-fragment" route="/calendar-fragment"></application>
-      <application name="@startup-digi-dojo-lab/task-create-form" route="/task-create-form"></application>
-      <application name="@startup-digi-dojo-lab/task-form" route="/task-form"></application>
-      <application name="@startup-digi-dojo-lab/task-fragment" route="/task-fragment"></application>
-      <application name="@startup-digi-dojo-lab/task-list" route="/task-list"></application>
-
-      <application name="@startup-digi-dojo-lab/note-creator"></application>
-      <application name="@startup-digi-dojo-lab/note-fragment"></application>
-      <application name="@startup-digi-dojo-lab/place-creator"></application>
-      <application name="@startup-digi-dojo-lab/place-fragment"></application>
-    </route>
-  </main> -->
 </single-spa-router>
