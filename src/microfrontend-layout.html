@@ -1,5 +1,67 @@
 <single-spa-router>
-  <main>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <route default>
+    <div class="container mt-5 def-height-place">
+      <div class="row h-10 pr-5">
+        <div class="col-3 pt-2 pl-4">
+          <h1 class="h2">Place Name</h1>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3 pt-2">
+          <button class="btn btn-secondary">
+            <span class="h4">Company Hall</span>
+          </button>
+        </div>
+      </div>
+      <div class="row h-90">
+        <div class="row col-2 w-100">
+          <div class="col-12 h-40 w-100 blue"></div>
+          <div class="col-12 h-20 w-100">
+            <application name="@startup-digi-dojo-lab/note-creator"></application>
+            <!-- <application name="@startup-digi-dojo-lab/places-list"></application>
+            <application name="@startup-digi-dojo-lab/place-creator"></application> -->
+          </div>
+          <div class="col-12 h-40 w-100" style="overflow-y: scroll">
+            <application name="@startup-digi-dojo-lab/notes-in-place-list"></application>
+          </div>
+        </div>
+        <div class="col-8 w-100">
+          <iframe
+            class="w-100 h-100"
+            id="whiteboard"
+            name="whiteboard"
+            allow="camera; microphone"
+            frameborder="2"
+            src="https://www.whiteboard.chat/apiaccess/createjoin/7f786a62-6baf-4fe1-91d2-f9760dd16ca8?key=613df765-fdd5-4403-9ab2-62744e166741&teacher=true"
+          >
+          </iframe>
+        </div>
+        <div class="row col-2 w-100">
+          <div class="col-12 h-30 w-100 blue"></div>
+          <div class="col-12 h-70 w-100 red"></div>
+        </div>
+      </div>
+    </div>
+  </route>
+
+  <!-- <main>
     <route default>
       <application name="@startup-digi-dojo-lab/add-team-member"></application>
       <application name="@startup-digi-dojo-lab/change-password"></application>
@@ -23,5 +85,5 @@
       <application name="@startup-digi-dojo-lab/place-creator"></application>
       <application name="@startup-digi-dojo-lab/place-fragment"></application>
     </route>
-  </main>
+  </main> -->
 </single-spa-router>
