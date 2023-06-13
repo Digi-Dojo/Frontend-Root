@@ -8,6 +8,8 @@
 
   <!-- Import Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 
   <!-- Import other stylesheets -->
   <style>
@@ -59,15 +61,20 @@
   <!-- Import required libraries -->
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6/dist/system.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6/dist/extras/amd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6/dist/extras/named-exports.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6/dist/extras/named-register.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function () {
-      let uuid = crypto.randomUUID();
+      let uuid = uuid.v4();
       let API_KEY = "613df765-fdd5-4403-9ab2-62744e166741";
       console.log(uuid);
       $('#whiteboard').attr("src", `https://www.whiteboard.chat/apiaccess/createjoin/${uuid}?key=${API_KEY}&teacher=true`);
     });
   </script>
+
 
 
   <!-- Import application scripts -->
