@@ -1,30 +1,24 @@
 <single-spa-router>
-  <!--
-
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
-
-  -->
-
+  <!-- Navigation Bar -->
   <nav>
     <div class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Company Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="/">Company Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">General Place</a>
-          <a class="nav-item nav-link" href="#/PersonalDesk">Personal Desk</a>
-          <a class="nav-item nav-link" href="#/scheduleBoard">Schedule Board</a>
-          <a class="nav-item nav-link" href="#/tasksBoard">Task Board</a>
+          <a class="nav-item nav-link active" href="/GeneralPlace">General Place</a>
+          <a class="nav-item nav-link" href="/PersonalDesk">Personal Desk</a>
+          <a class="nav-item nav-link" href="/scheduleBoard">Schedule Board</a>
+          <a class="nav-item nav-link" href="/tasksBoard">Task Board</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- <route path="/GeneralPlace"> -->
-    <route default>
+  <route default activeWhen="/GeneralPlace">
     <div class="container mt-5 def-height-place">
       <div class="row h-10 pr-5">
         <div class="col-3 pt-2 pl-4">
@@ -48,14 +42,8 @@
           </div>
         </div>
         <div class="col-8 w-100">
-          <iframe
-            class="w-100 h-100"
-            id="whiteboard"
-            name="whiteboard"
-            allow="camera; microphone"
-            frameborder="2"
-            src="https://www.whiteboard.chat/apiaccess/createjoin/7f786a62-6baf-4fe1-91d2-f9760dd16ca8?key=613df765-fdd5-4403-9ab2-62744e166741&teacher=true"
-          >
+          <iframe class="w-100 h-100" id="whiteboard" name="whiteboard" allow="camera; microphone" frameborder="2"
+            src="https://www.whiteboard.chat/apiaccess/createjoin/7f786a62-6baf-4fe1-91d2-f9760dd16ca8?key=613df765-fdd5-4403-9ab2-62744e166741&teacher=true">
           </iframe>
         </div>
         <div class="row col-2 w-100">
@@ -70,7 +58,7 @@
     </div>
   </route>
 
-  <route path="/PersonalDesk">
+  <route activeWhen="/PersonalDesk">
     <div class="container mt-5 def-height-place">
       <div class="row h-10 pr-5">
         <div class="col-3 pt-2 pl-4">
@@ -94,14 +82,8 @@
           </div>
         </div>
         <div class="col-8 w-100">
-          <iframe
-            class="w-100 h-100"
-            id="whiteboard"
-            name="whiteboard"
-            allow="camera; microphone"
-            frameborder="2"
-            src="https://www.whiteboard.chat/apiaccess/createjoin/7f786a62-6baf-4fe1-91d2-f9760dd16ca8?key=613df765-fdd5-4403-9ab2-62744e166741&teacher=true"
-          >
+          <iframe class="w-100 h-100" id="whiteboard" name="whiteboard" allow="camera; microphone" frameborder="2"
+            src="https://www.whiteboard.chat/apiaccess/createjoin/7f786a62-6baf-4fe1-91d2-f9760dd16ca8?key=613df765-fdd5-4403-9ab2-62744e166741&teacher=true">
           </iframe>
         </div>
         <div class="row col-2 h-180 w-150 ">
@@ -147,7 +129,7 @@
     </div>
   </route>
 
-  <route path="/tasksBoard">
+  <route activeWhen="/tasksBoard">
     <div class="container mt-5 def-height-place">
       <div class="row h-10 pr-5">
         <div class="col-3 pt-2 pl-4">
