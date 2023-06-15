@@ -9,16 +9,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="/GeneralPlace">General Place</a>
-          <a class="nav-item nav-link" href="/PersonalDesk">Personal Desk</a>
-          <a class="nav-item nav-link" href="/scheduleBoard">Schedule Board</a>
-          <a class="nav-item nav-link" href="/tasksBoard">Task Board</a>
+          <a class="nav-item nav-link active" href="/GeneralPlace" onclick="setActiveLink(event)">General Place</a>
+          <a class="nav-item nav-link" href="/PersonalDesk" onclick="setActiveLink(event)">Personal Desk</a>
+          <a class="nav-item nav-link" href="/scheduleBoard" onclick="setActiveLink(event)">Schedule Board</a>
+          <a class="nav-item nav-link" href="/tasksBoard" onclick="setActiveLink(event)">Task Board</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <route default>
+  <route path="/GeneralPlace" default>
     <div class="container mt-5 def-height-place">
       <div class="row h-10 pr-5">
         <div class="col-3 pt-2 pl-4">
@@ -119,11 +119,16 @@
           </div>
         </div>
         <!-- Right side divs -->
-        <div class="col-8 w-100">
-          <!-- Empty space -->
-        </div>
-        <div class="col-2 w-100">
-          <!-- Empty space -->
+        <div class="col-8 w-150">
+          <div class="col-10 w-120">
+            <application name="@startup-digi-dojo-lab/calendar-event-form"></application>
+          </div>
+          <div class="col-10 w-120">
+            <application name="@startup-digi-dojo-lab/calendar-fragment"></application>
+          </div>
+          <div class="col-10 w-120">
+            <application name="@startup-digi-dojo-lab/calendar-event-list" style="overflow-y: scroll"></application>
+          </div>
         </div>
       </div>
     </div>
@@ -160,3 +165,20 @@
     </div>
   </route>
 </single-spa-router>
+
+
+<script>
+  function setActiveLink(event) {
+    // Prevent the default link behavior
+    event.preventDefault();
+
+    // Remove the "active" class from all nav links
+    var navLinks = document.getElementsByClassName('nav-link');
+    for (var i = 0; i < navLinks.length; i++) {
+      navLinks[i].classList.remove('active');
+    }
+
+    // Add the "active" class to the clicked nav link
+    event.target.classList.add('active');
+  }
+</script>
