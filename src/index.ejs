@@ -78,7 +78,7 @@
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js",
         "@mui/material": "https://unpkg.com/@mui/material@latest/umd/material-ui.development.js",
 
-        "@startup-digi-dojo-lab/root-config": "https://startup-digi-dojo-lab.onrender.com/startup-digi-dojo-lab-root-config.js",
+        "@startup-digi-dojo-lab/root-config": "<%= isLocal ? '//localhost:9000/startup-digi-dojo-lab-root-config.js' : 'https://startup-digi-dojo-lab.onrender.com/startup-digi-dojo-lab-root-config.js' %>",
         
         "@startup-digi-dojo-lab/add-team-member": "<%= isLocal ? '//localhost:8080/startup-digi-dojo-lab-add-team-member.js' : 'https://sddl-add-team-member.onrender.com/startup-digi-dojo-lab-add-team-member.js' %>",
         "@startup-digi-dojo-lab/change-password": "<%= isLocal ? '//localhost:8080/startup-digi-dojo-lab-change-password.js' : 'https://sddl-change-password.onrender.com/startup-digi-dojo-lab-change-password.js' %>",
