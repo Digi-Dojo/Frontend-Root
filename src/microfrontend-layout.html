@@ -23,8 +23,34 @@
     </div>
   </nav>
 
-  <!-- <route path="/GeneralPlace"> -->
-    <route default>
+  <route default>
+    <div class="container mt-5 def-height-place">
+      <div class="row h-10 pr-5">
+        <div class="col-3 pt-2 pl-4">
+          <h1 class="h2">Company Hall</h1>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3 pt-2">
+          <button class="btn btn-secondary">
+            <span class="h4">Leave</span>
+          </button>
+        </div>
+      </div>
+      <div class="row h-90">
+
+        <div class="row h-50" style="overflow-y: scroll">
+          <application name="@startup-digi-dojo-lab/places-list"></application>
+        </div>
+
+        <!-- <div class="row h-30">
+          <application name="@startup-digi-dojo-lab/place-creator"></application>
+        </div> -->
+        
+      </div>
+    </div>
+  </route>
+
+  <route path="/GeneralPlace">
     <div class="container mt-5 def-height-place">
       <div class="row h-10 pr-5">
         <div class="col-3 pt-2 pl-4">
@@ -32,9 +58,7 @@
         </div>
         <div class="col-6"></div>
         <div class="col-3 pt-2">
-          <button class="btn btn-secondary">
-            <span class="h4">Company Hall</span>
-          </button>
+          <a class="btn btn-secondary" href="/"> <span class="h4"> Company Hall </span></a>
         </div>
       </div>
       <div class="row h-90">
