@@ -82,7 +82,8 @@
         "@startup-digi-dojo-lab/note-creator": "<%= isLocal ? 'https://sddl-note-creator.onrender.com/startup-digi-dojo-lab-note-creator.js' : 'https://sddl-note-creator.onrender.com/startup-digi-dojo-lab-note-creator.js' %>",
         "@startup-digi-dojo-lab/place-creator": "<%= isLocal ? 'https://sddl-place-creator.onrender.com/startup-digi-dojo-lab-place-creator.js' : 'https://sddl-place-creator.onrender.com/startup-digi-dojo-lab-place-creator.js' %>",
         "@startup-digi-dojo-lab/places-list": "<%= isLocal ? 'https://sddl-places-list.onrender.com/startup-digi-dojo-lab-places-list.js' : 'https://sddl-places-list.onrender.com/startup-digi-dojo-lab-places-list.js' %>",
-        "@startup-digi-dojo-lab/notes-in-place-list": "<%= isLocal ? 'https://sddl-places-list.onrender.com/startup-digi-dojo-lab-notes-in-place-list.js' : 'https://sddl-places-list.onrender.com/startup-digi-dojo-lab-notes-in-place-list.js' %>"
+        "@startup-digi-dojo-lab/notes-list": "<%= isLocal ? 'https://sddl-notes-list.onrender.com/startup-digi-dojo-lab-notes-list.js' : 'https://sddl-notes-list.onrender.com/startup-digi-dojo-lab-notes-list.js' %>",
+        "@startup-digi-dojo-lab/whiteboard": "<%= isLocal ? 'https://sddl-whiteboard.onrender.com/startup-digi-dojo-lab-whiteboard.js' : 'https://sddl-whiteboard.onrender.com/startup-digi-dojo-lab-whiteboard.js' %>"
       }
     } 
   </script>
@@ -94,20 +95,10 @@
     You need to enable JavaScript to run this app.
   </noscript>
 
-  <div id="whiteboard"></div>
-
   <!-- Import required libraries -->
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6/dist/system.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6/dist/extras/amd.min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      let uuid = crypto.randomUUID();
-      let API_KEY = "613df765-fdd5-4403-9ab2-62744e166741";
-      console.log(uuid);
-      $('#whiteboard').attr("src", `https://www.whiteboard.chat/apiaccess/createjoin/${uuid}?key=${API_KEY}&teacher=true`);
-    });
-  </script>
 
   
 
