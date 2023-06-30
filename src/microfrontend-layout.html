@@ -1,4 +1,4 @@
-<single-spa-router>
+<single-spa-router >
   <!--
 
     This is the single-spa Layout Definition for your microfrontends.
@@ -14,10 +14,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">General Place</a>
-          <a class="nav-item nav-link" href="#/PersonalDesk">Personal Desk</a>
-          <a class="nav-item nav-link" href="#/scheduleBoard">Schedule Board</a>
-          <a class="nav-item nav-link" href="#/tasksBoard">Task Board</a>
+          <a class="nav-item nav-link active" href="/">Home</a>
+          <a class="nav-item nav-link " href="/AboutTeam"> About Team</a>
         </div>
       </div>
     </div>
@@ -51,7 +49,7 @@
   </route>
 
   <route path="/GeneralPlace">
-    <div class="container mt-5 def-height-place">
+    <div class="container mt-5 def-height-place" >
       <div class="row h-10 pr-5">
         <div class="col-3 pt-2 pl-4">
           <h1 class="h2">Place Name</h1>
@@ -71,7 +69,7 @@
             <application name="@startup-digi-dojo-lab/notes-list"></application>
           </div>
         </div>
-        <div class="col-8 w-100">
+        <div class="col-8 w-100" >
           <application name="@startup-digi-dojo-lab/whiteboard"></application>
         </div>
         <div class="row col-2 w-100">
@@ -84,6 +82,56 @@
         </div>
       </div>
     </div>
+    
+  </route>
+
+  <route path="/AboutTeam">
+
+    <div class="container mt-5 def-height-place" >
+      <div class="container row h-30 ">
+
+        <div class="row h-20 col-12">
+          <span class="h4">Team B</span>
+        </div>
+        <div class="row h-80 col-12">
+          <div class="col-4">
+            <div class="row h-80">
+              <a href="https://github.com/francescomazzini" target="_blank"><img src="https://avatars.githubusercontent.com/u/79516317?v=4" style="width: 50%; height: auto" class="img-thumbnail"></a>
+            </div>
+            <div class="row h-20">
+              <span class="h4">Francesco Mazzini</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row h-80">
+              <a href="https://github.com/Sherlezy" target="_blank"><img href="" src="https://avatars.githubusercontent.com/u/100694676?v=4" style="width: 50%; height: auto" class="img-thumbnail"></a>
+            </div>
+            <div class="row h-20">
+              <span class="h4">Alessandro Ercolani</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row h-80">
+              <a href="https://github.com/SimoneFerraris" target="_blank"><img src="https://avatars.githubusercontent.com/u/79935593?v=4" style="width: 50%; height: auto" class="img-thumbnail"></a>
+            </div>
+            <div class="row h-20">
+              <span class="h4">Simone Ferraris</span>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+
+      </div>
+      <div class="row h-30 ">
+        
+      </div>
+      <div class="row h-30 ">
+        
+      </div>
+    </div>
+
   </route>
 
   <route path="/PersonalDesk">
