@@ -49,36 +49,43 @@
   </route>
 
   <route path="/GeneralPlace">
-    <div class="container mt-5 def-height-place" >
-      <div class="row h-10 pr-5">
-        <div class="col-3 pt-2 pl-4">
-          <h1 class="h2">Place Name</h1>
-        </div>
-        <div class="col-6"></div>
-        <div class="col-3 pt-2">
-          <a class="btn btn-secondary" href="/"> <span class="h4"> Company Hall </span></a>
-        </div>
-      </div>
-      <div class="row h-90">
-        <div class="row col-2 w-100">
-          <div class="col-12 h-40 w-100 blue"></div>
-          <div class="col-12 h-20 w-100">
-            <application name="@startup-digi-dojo-lab/note-creator"></application>
+    <div style="overflow-y: scroll; "> 
+      <div class="container mt-5 def-height-place" >
+        <div class="row h-10 pr-5">
+          <div class="col-3 pt-2 pl-4">
+            <h1 class="h2">Place Name</h1>
           </div>
-          <div class="col-12 h-40 w-100" style="overflow-y: scroll">
-            <application name="@startup-digi-dojo-lab/notes-list"></application>
+          <div class="col-6"></div>
+          <div class="col-3 pt-2">
+            <a class="btn btn-secondary" href="/"> <span class="h4"> Company Hall </span></a>
           </div>
         </div>
-        <div class="col-8 w-100" >
-          <application name="@startup-digi-dojo-lab/whiteboard"></application>
+        <div class="row h-20 red">
+          <!-- <application name="@startup-digi-dojo-lab/jisti-meeting"></application> -->
         </div>
-        <div class="row col-2 w-100">
-          <div class="col-12 h-30 w-150" style="overflow-y: scroll">
-            <application name="@startup-digi-dojo-lab/task-create-form"></application>
+        <div class="row h-90">
+          <div class="row col-2 w-100">
+            <div class="col-12 h-40 w-100 blue"></div>
+            <div class="col-12 h-20 w-100">
+              <application name="@startup-digi-dojo-lab/note-creator"></application>
+            </div>
+            <div class="col-12 h-40 w-100" style="overflow-y: scroll">
+              <application name="@startup-digi-dojo-lab/notes-list"></application>
+            </div>
           </div>
-          <div class="col-12 h-30 w-150" style="overflow-y: scroll">
-            <application name="@startup-digi-dojo-lab/task-list"></application>
+          <div class="col-8 w-100" >
+            <application name="@startup-digi-dojo-lab/whiteboard"></application>
           </div>
+          <div class="row col-2 w-100">
+            <div class="col-12 h-30 w-150" style="overflow-y: scroll">
+              <application name="@startup-digi-dojo-lab/task-create-form"></application>
+            </div>
+            <div class="col-12 h-30 w-150" style="overflow-y: scroll">
+              <application name="@startup-digi-dojo-lab/task-list"></application>
+            </div>
+          </div>
+        </div>
+        <div class="row h-30">
         </div>
       </div>
     </div>
@@ -119,8 +126,6 @@
             </div>
           </div>
         </div>
-        
-        
         
 
       </div>
