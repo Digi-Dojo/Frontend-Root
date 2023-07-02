@@ -52,13 +52,14 @@
     <div style="overflow-y: scroll; "> 
       <div class="container mt-5 def-height-place" >
         <div class="row h-10 pr-5">
-          <div class="col-3 pt-2 pl-4">
+          <!-- <div class="col-3 pt-2 pl-4">
             <h1 class="h2">Place Name</h1>
           </div>
           <div class="col-6"></div>
           <div class="col-3 pt-2">
             <a class="btn btn-secondary" href="/"> <span class="h4"> Company Hall </span></a>
-          </div>
+          </div> -->
+          <application name="@startup-digi-dojo-lab/place-title"></application>
         </div>
         <div class="row h-20 red">
           <!-- <application name="@startup-digi-dojo-lab/jisti-meeting"></application> -->
@@ -91,6 +92,14 @@
     </div>
     
   </route>
+
+  <route path="/Meeting">
+    <div style="width:800px; height: auto">
+      <application name="@startup-digi-dojo-lab/jisti-meeting"></application>
+    </div>
+
+  </route>
+
 
   <route path="/AboutTeam">
 

@@ -61,6 +61,7 @@
         "react": "https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js",
         "@mui/material": "https://unpkg.com/@mui/material@latest/umd/material-ui.development.js",
+        "@jitsi/react-sdk": "https://meet.jit.si/libs/lib-jitsi-meet.min.js",
 
         "@startup-digi-dojo-lab/root-config": "<%= isLocal ? '//localhost:9000/startup-digi-dojo-lab-root-config.js' : 'https://startup-digi-dojo-lab.onrender.com/startup-digi-dojo-lab-root-config.js' %>",
         
@@ -84,7 +85,8 @@
         "@startup-digi-dojo-lab/places-list": "<%= isLocal ? 'https://sddl-places-list.onrender.com/startup-digi-dojo-lab-places-list.js' : 'https://sddl-places-list.onrender.com/startup-digi-dojo-lab-places-list.js' %>",
         "@startup-digi-dojo-lab/notes-list": "<%= isLocal ? 'https://sddl-notes-list.onrender.com/startup-digi-dojo-lab-notes-list.js' : 'https://sddl-notes-list.onrender.com/startup-digi-dojo-lab-notes-list.js' %>",
         "@startup-digi-dojo-lab/whiteboard": "<%= isLocal ? 'https://sddl-whiteboard.onrender.com/startup-digi-dojo-lab-whiteboard.js' : 'https://sddl-whiteboard.onrender.com/startup-digi-dojo-lab-whiteboard.js' %>",
-        "@startup-digi-dojo-lab/jisti-meeting": "<%= isLocal ? 'https://sddl-jisti-meeting.onrender.com/startup-digi-dojo-lab-jisti-meeting.js' : 'https://sddl-jisti-meeting.onrender.com/startup-digi-dojo-lab-jisti-meeting.js' %>"
+        "@startup-digi-dojo-lab/jisti-meeting": "<%= isLocal ? 'https://sddl-jisti-meeting.onrender.com/startup-digi-dojo-lab-jisti-meeting.js' : 'https://sddl-jisti-meeting.onrender.com/startup-digi-dojo-lab-jisti-meeting.js' %>",
+        "@startup-digi-dojo-lab/place-title": "<%= isLocal ? 'https://sddl-place-title.onrender.com/startup-digi-dojo-lab-place-title.js' : 'https://sddl-place-title.onrender.com/startup-digi-dojo-lab-place-title.js' %>"
       }
     } 
   </script>
@@ -100,7 +102,8 @@
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6/dist/system.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6/dist/extras/amd.min.js"></script>
 
-
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://meet.jit.si/libs/lib-jitsi-meet.min.js"></script>
   
 
   <!-- Import main application script -->
