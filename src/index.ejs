@@ -8,6 +8,10 @@
 
   <!-- Import Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+
+
 
   <!-- Import other stylesheets -->
   <style>
@@ -53,6 +57,7 @@
   <meta name="importmap-type" content="systemjs-importmap" />
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
+
   <!-- Import application scripts -->
   <script type="systemjs-importmap">
     {
@@ -77,8 +82,9 @@
         "@startup-digi-dojo-lab/calendar-event-list": "<%= isLocal ? '//localhost:8080/startup-digi-dojo-lab-calendar-event-list.js' : 'https://sddl-calendar-event-list.onrender.com/startup-digi-dojo-lab-calendar-event-list.js' %>",
         "@startup-digi-dojo-lab/calendar-fragment": "<%= isLocal ? '//localhost:8080/startup-digi-dojo-lab-calendar-fragment.js' : 'https://sddl-calendar-fragment.onrender.com/startup-digi-dojo-lab-calendar-fragment.js' %>",
 
-        "@startup-digi-dojo-lab/task-create-form": "https://sddl-task-create-form-r21m.onrender.com/startup-digi-dojo-task-create-form.js",
-        "@startup-digi-dojo-lab/task-list": "https://sddl-task-list-t9e4.onrender.com/startup-digi-dojo-lab-task-list.js",
+
+        "@startup-digi-dojo-lab/task-create-form": "<%= isLocal ? '//localhost:8080/startup-digi-dojo-task-create-form.js' : 'https://sddl-task-create-form-r21m.onrender.com/startup-digi-dojo-task-create-form.js' %>",
+        "@startup-digi-dojo-lab/task-list": "<%= isLocal ? '//localhost:8081/startup-digi-dojo-lab-task-list.js' : 'https://sddl-task-list-t9e4.onrender.com/startup-digi-dojo-lab-task-list.js' %>",
       
         "@startup-digi-dojo-lab/note-creator": "<%= isLocal ? 'https://sddl-note-creator.onrender.com/startup-digi-dojo-lab-note-creator.js' : 'https://sddl-note-creator.onrender.com/startup-digi-dojo-lab-note-creator.js' %>",
         "@startup-digi-dojo-lab/place-creator": "<%= isLocal ? 'https://sddl-place-creator.onrender.com/startup-digi-dojo-lab-place-creator.js' : 'https://sddl-place-creator.onrender.com/startup-digi-dojo-lab-place-creator.js' %>",
@@ -87,6 +93,7 @@
         "@startup-digi-dojo-lab/whiteboard": "<%= isLocal ? 'https://sddl-whiteboard.onrender.com/startup-digi-dojo-lab-whiteboard.js' : 'https://sddl-whiteboard.onrender.com/startup-digi-dojo-lab-whiteboard.js' %>",
         "@startup-digi-dojo-lab/jisti-meeting": "<%= isLocal ? 'https://sddl-jisti-meeting.onrender.com/startup-digi-dojo-lab-jisti-meeting.js' : 'https://sddl-jisti-meeting.onrender.com/startup-digi-dojo-lab-jisti-meeting.js' %>",
         "@startup-digi-dojo-lab/place-title": "<%= isLocal ? 'https://sddl-place-title.onrender.com/startup-digi-dojo-lab-place-title.js' : 'https://sddl-place-title.onrender.com/startup-digi-dojo-lab-place-title.js' %>"
+
       }
     } 
   </script>

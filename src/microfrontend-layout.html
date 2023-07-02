@@ -1,14 +1,9 @@
 <single-spa-router>
-  <!--
-
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
-
-  -->
-
+  <!-- Navigation Bar -->
   <nav>
     <div class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Company Logo</a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -17,6 +12,7 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="/">Home</a>
           <a class="nav-item nav-link " href="/AboutTeam"> About Team</a>
+
         </div>
       </div>
     </div>
@@ -134,9 +130,6 @@
             </div>
           </div>
         </div>
-        
-        
-        
 
       </div>
       <br>
@@ -225,11 +218,11 @@
             src="https://www.whiteboard.chat/apiaccess/createjoin/7f786a62-6baf-4fe1-91d2-f9760dd16ca8?key=613df765-fdd5-4403-9ab2-62744e166741&teacher=true">
           </iframe>
         </div>
-        <div class="row col-2 h-180 w-150 ">
-          <div class="col-12 h-90 w-150" style="overflow-y: scroll">
+        <div class="row col-2 w-100">
+          <div class="col-12 h-45 w-150" style="overflow-y: scroll">
             <application name="@startup-digi-dojo-lab/task-create-form"></application>
           </div>
-          <div class="col-12 h-30 w-150" style="overflow-y: scroll">
+          <div class="col-12 h-45 w-150" style="overflow-y: scroll">
             <application name="@startup-digi-dojo-lab/task-list"></application>
           </div>
         </div>
@@ -258,11 +251,16 @@
           </div>
         </div>
         <!-- Right side divs -->
-        <div class="col-8 w-100">
-          <!-- Empty space -->
-        </div>
-        <div class="col-2 w-100">
-          <!-- Empty space -->
+        <div class="col-10 w-150">
+          <div class="col-12 w-120">
+            <application name="@startup-digi-dojo-lab/calendar-event-form"></application>
+          </div>
+          <div class="col-12 w-120">
+            <application name="@startup-digi-dojo-lab/calendar-fragment"></application>
+          </div>
+          <div class="col-12 w-120">
+            <application name="@startup-digi-dojo-lab/calendar-event-list" style="overflow-y: scroll"></application>
+          </div>
         </div>
       </div>
     </div>
@@ -289,13 +287,18 @@
           </div>
         </div>
         <!-- Right side divs -->
-        <div class="col-8 w-100">
-          <!-- Empty space -->
-        </div>
-        <div class="col-2 w-100">
-          <!-- Empty space -->
+        <div class="col-10 w-150">
+          <div class="col-12 w-120">
+            <application name="@startup-digi-dojo-lab/task-create-form"></application>
+          </div>
+          <div class="col-12 w-120 yellow">
+          </div>
+          <div class="col-12 w-120">
+            <application name="@startup-digi-dojo-lab/task-list" style="overflow-y: scroll"></application>
+          </div>
         </div>
       </div>
     </div>
   </route>
 </single-spa-router>
+
